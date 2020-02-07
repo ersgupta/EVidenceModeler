@@ -222,7 +222,7 @@ sub ensure_CDS_and_exon_encapsulation {
 	  }
 	  
 	  unless (@CDSs) {
-		print "ERROR, mRNA $mRNA_feature_ID lacks a CDS record";
+		print "ERROR, mRNA $mRNA_feature_ID lacks a CDS record\n";
 	  }
 	  &correlate_CDSs_with_exons(\@exons, \@CDSs);
 	  
